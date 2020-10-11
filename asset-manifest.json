@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Thrifleganger/cloud-inversion/static/css/main.a55b814a.chunk.css",
+    "main.js": "/Thrifleganger/cloud-inversion/static/js/main.0e03d7eb.chunk.js",
+    "main.js.map": "/Thrifleganger/cloud-inversion/static/js/main.0e03d7eb.chunk.js.map",
+    "runtime-main.js": "/Thrifleganger/cloud-inversion/static/js/runtime-main.c47afcb2.js",
+    "runtime-main.js.map": "/Thrifleganger/cloud-inversion/static/js/runtime-main.c47afcb2.js.map",
+    "static/css/2.db125c65.chunk.css": "/Thrifleganger/cloud-inversion/static/css/2.db125c65.chunk.css",
+    "static/js/2.cca33f6d.chunk.js": "/Thrifleganger/cloud-inversion/static/js/2.cca33f6d.chunk.js",
+    "static/js/2.cca33f6d.chunk.js.map": "/Thrifleganger/cloud-inversion/static/js/2.cca33f6d.chunk.js.map",
+    "index.html": "/Thrifleganger/cloud-inversion/index.html",
+    "precache-manifest.230ac54e3424437f31c6e7073be74513.js": "/Thrifleganger/cloud-inversion/precache-manifest.230ac54e3424437f31c6e7073be74513.js",
+    "service-worker.js": "/Thrifleganger/cloud-inversion/service-worker.js",
+    "static/css/2.db125c65.chunk.css.map": "/Thrifleganger/cloud-inversion/static/css/2.db125c65.chunk.css.map",
+    "static/css/main.a55b814a.chunk.css.map": "/Thrifleganger/cloud-inversion/static/css/main.a55b814a.chunk.css.map",
+    "static/js/2.cca33f6d.chunk.js.LICENSE.txt": "/Thrifleganger/cloud-inversion/static/js/2.cca33f6d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c47afcb2.js",
+    "static/css/2.db125c65.chunk.css",
+    "static/js/2.cca33f6d.chunk.js",
+    "static/css/main.a55b814a.chunk.css",
+    "static/js/main.0e03d7eb.chunk.js"
+  ]
+}
