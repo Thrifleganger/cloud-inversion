@@ -1,0 +1,63 @@
+.sliderDrawer {
+    /*background: linear-gradient(180deg, #0f2027, #203a43, #2a4958);*/
+    background: linear-gradient(180deg, #41546b, #7891a5);
+}
+
+.sliderContainer {
+    margin: 1em 0.5em;
+    height: 100%;
+}
+
+.sliderLabel {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.drawerHandleTop {
+    width: 100%;
+    height: 0.4em;
+    background: #36404a;
+    box-shadow: -2px -2px 14px 0px rgba(0, 0, 0, 0.63);
+}
+
+.drawerHandleBottom {
+    width: 100%;
+    height: 0.4em;
+    background: #36404a;
+    box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.63);
+}
+
+.bottomDrawer {
+    background: linear-gradient(0deg, #41546b, #7891a5);
+}
+
+.bottomDrawerSliderSection {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.bottomDrawerSliderAndLabelGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.8em;
+}
+
+.textDeclaration {
+    text-align: right;
+    height: 2em;
+    padding: 0.5em 1.5em;
+    background-color: #1e2e3e;
+    color: #bcdff8;
+    box-shadow: -2px -2px 6px 0px rgba(0, 0, 0, 0.43);
+}
+
+.textDeclaration a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottomDrawerSwitches {
+    padding: 1em 2em;
+}

@@ -1,0 +1,24 @@
+.gradientBackground {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    z-index: -100;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    transition: ease-in-out 2s;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: -400%;
+    }
+    100% {
+        left: 0%;
+    }
+}
