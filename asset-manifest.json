@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Thrifleganger/cloud-inversion/static/css/main.a55b814a.chunk.css",
-    "main.js": "/Thrifleganger/cloud-inversion/static/js/main.517fa98f.chunk.js",
-    "main.js.map": "/Thrifleganger/cloud-inversion/static/js/main.517fa98f.chunk.js.map",
-    "runtime-main.js": "/Thrifleganger/cloud-inversion/static/js/runtime-main.4f46bd16.js",
-    "runtime-main.js.map": "/Thrifleganger/cloud-inversion/static/js/runtime-main.4f46bd16.js.map",
-    "static/css/2.db125c65.chunk.css": "/Thrifleganger/cloud-inversion/static/css/2.db125c65.chunk.css",
-    "static/js/2.cb4b60cf.chunk.js": "/Thrifleganger/cloud-inversion/static/js/2.cb4b60cf.chunk.js",
-    "static/js/2.cb4b60cf.chunk.js.map": "/Thrifleganger/cloud-inversion/static/js/2.cb4b60cf.chunk.js.map",
-    "index.html": "/Thrifleganger/cloud-inversion/index.html",
-    "precache-manifest.6f3821c0cfc4ef270a5d3b72bb05b2d1.js": "/Thrifleganger/cloud-inversion/precache-manifest.6f3821c0cfc4ef270a5d3b72bb05b2d1.js",
-    "service-worker.js": "/Thrifleganger/cloud-inversion/service-worker.js",
-    "static/css/2.db125c65.chunk.css.map": "/Thrifleganger/cloud-inversion/static/css/2.db125c65.chunk.css.map",
-    "static/css/main.a55b814a.chunk.css.map": "/Thrifleganger/cloud-inversion/static/css/main.a55b814a.chunk.css.map",
-    "static/js/2.cb4b60cf.chunk.js.LICENSE.txt": "/Thrifleganger/cloud-inversion/static/js/2.cb4b60cf.chunk.js.LICENSE.txt"
+    "main.css": "/cloud-inversion/static/css/main.a55b814a.chunk.css",
+    "main.js": "/cloud-inversion/static/js/main.3dc19c60.chunk.js",
+    "main.js.map": "/cloud-inversion/static/js/main.3dc19c60.chunk.js.map",
+    "runtime-main.js": "/cloud-inversion/static/js/runtime-main.75b9123b.js",
+    "runtime-main.js.map": "/cloud-inversion/static/js/runtime-main.75b9123b.js.map",
+    "static/css/2.db125c65.chunk.css": "/cloud-inversion/static/css/2.db125c65.chunk.css",
+    "static/js/2.cb4b60cf.chunk.js": "/cloud-inversion/static/js/2.cb4b60cf.chunk.js",
+    "static/js/2.cb4b60cf.chunk.js.map": "/cloud-inversion/static/js/2.cb4b60cf.chunk.js.map",
+    "index.html": "/cloud-inversion/index.html",
+    "precache-manifest.aab33e51a4d49df87d6c4d6f2acc422c.js": "/cloud-inversion/precache-manifest.aab33e51a4d49df87d6c4d6f2acc422c.js",
+    "service-worker.js": "/cloud-inversion/service-worker.js",
+    "static/css/2.db125c65.chunk.css.map": "/cloud-inversion/static/css/2.db125c65.chunk.css.map",
+    "static/css/main.a55b814a.chunk.css.map": "/cloud-inversion/static/css/main.a55b814a.chunk.css.map",
+    "static/js/2.cb4b60cf.chunk.js.LICENSE.txt": "/cloud-inversion/static/js/2.cb4b60cf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4f46bd16.js",
+    "static/js/runtime-main.75b9123b.js",
     "static/css/2.db125c65.chunk.css",
     "static/js/2.cb4b60cf.chunk.js",
     "static/css/main.a55b814a.chunk.css",
-    "static/js/main.517fa98f.chunk.js"
+    "static/js/main.3dc19c60.chunk.js"
   ]
 }
