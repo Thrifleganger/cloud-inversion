@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Thrifleganger/cloud-inversion/precache-manifest.230ac54e3424437f31c6e7073be74513.js"
+  "/Thrifleganger/cloud-inversion/precache-manifest.6f3821c0cfc4ef270a5d3b72bb05b2d1.js"
 );
 
 self.addEventListener('message', (event) => {
