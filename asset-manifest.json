@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/swara-react-synth/static/css/main.87736677.chunk.css",
-    "main.js": "/swara-react-synth/static/js/main.8773dcaa.chunk.js",
-    "main.js.map": "/swara-react-synth/static/js/main.8773dcaa.chunk.js.map",
-    "runtime-main.js": "/swara-react-synth/static/js/runtime-main.0a40e8c1.js",
-    "runtime-main.js.map": "/swara-react-synth/static/js/runtime-main.0a40e8c1.js.map",
-    "static/css/2.db125c65.chunk.css": "/swara-react-synth/static/css/2.db125c65.chunk.css",
-    "static/js/2.a4b2c186.chunk.js": "/swara-react-synth/static/js/2.a4b2c186.chunk.js",
-    "static/js/2.a4b2c186.chunk.js.map": "/swara-react-synth/static/js/2.a4b2c186.chunk.js.map",
-    "index.html": "/swara-react-synth/index.html",
-    "precache-manifest.d072816aff5bc3d306f725c46d984ef4.js": "/swara-react-synth/precache-manifest.d072816aff5bc3d306f725c46d984ef4.js",
-    "service-worker.js": "/swara-react-synth/service-worker.js",
-    "static/css/2.db125c65.chunk.css.map": "/swara-react-synth/static/css/2.db125c65.chunk.css.map",
-    "static/css/main.87736677.chunk.css.map": "/swara-react-synth/static/css/main.87736677.chunk.css.map",
-    "static/js/2.a4b2c186.chunk.js.LICENSE.txt": "/swara-react-synth/static/js/2.a4b2c186.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/swara-react-synth/static/media/OrangeSlices.efd49053.woff"
+    "main.css": "/static/css/main.51657cae.chunk.css",
+    "main.js": "/static/js/main.c895abec.chunk.js",
+    "main.js.map": "/static/js/main.c895abec.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.602a32a1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.602a32a1.js.map",
+    "static/css/2.db125c65.chunk.css": "/static/css/2.db125c65.chunk.css",
+    "static/js/2.a4b2c186.chunk.js": "/static/js/2.a4b2c186.chunk.js",
+    "static/js/2.a4b2c186.chunk.js.map": "/static/js/2.a4b2c186.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e2ee61eb8017ab7cf457a508da391322.js": "/precache-manifest.e2ee61eb8017ab7cf457a508da391322.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.db125c65.chunk.css.map": "/static/css/2.db125c65.chunk.css.map",
+    "static/css/main.51657cae.chunk.css.map": "/static/css/main.51657cae.chunk.css.map",
+    "static/js/2.a4b2c186.chunk.js.LICENSE.txt": "/static/js/2.a4b2c186.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/OrangeSlices.efd49053.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a40e8c1.js",
+    "static/js/runtime-main.602a32a1.js",
     "static/css/2.db125c65.chunk.css",
     "static/js/2.a4b2c186.chunk.js",
-    "static/css/main.87736677.chunk.css",
-    "static/js/main.8773dcaa.chunk.js"
+    "static/css/main.51657cae.chunk.css",
+    "static/js/main.c895abec.chunk.js"
   ]
 }
