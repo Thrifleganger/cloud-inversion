@@ -30,6 +30,21 @@ const PianoLayout = (props) => {
     })
   }, [])
 
+  let x = 0;
+  const handleMouseDown = useCallback(e => {
+    x = e.screenX;
+  }, []);
+
+  const handleClick = useCallback((e, i) => {
+    const delta = Math.abs(e.screenX - x);
+    if (delta > 10) {
+      e.preventDefault();
+    } else {
+      keySelectHandler(i);
+    }
+    x = 0;
+  }, []);
+
   return (
     <div>
       {console.log("rendering piano")}
@@ -37,7 +52,7 @@ const PianoLayout = (props) => {
         {keys.map((k,i) => (
           <li key={i}
               className={`${k.key} ${k.type} ${keysActivated.includes(i) ? "keySelected": ""}`}
-              onClick={(event) => keySelectHandler(i)}
+              onClick={(event) => handleClick(event, i)} onMouseDown={handleMouseDown}
           />
         ))}
       </ul>

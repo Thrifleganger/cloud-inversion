@@ -21,13 +21,16 @@ const BottomDrawer = (props) => {
           color: "#29DFF9",
         },
         track: {
-          color: '#29DFF9'
+          color: '#baf0fc'
+        },
+        rail: {
+          color: '#16191a'
         }
       }
     }
   });
 
-  {console.log("Rendering bottom drawer")}
+  console.log("Rendering bottom drawer")
 
   return (
     <>
@@ -45,8 +48,11 @@ const BottomDrawer = (props) => {
             <FormControlLabel
               value="displayWaveform"
               control={
-                <Switch color="primary" defaultChecked={initializationConstants.displayWaveform}
-                        onChange={(event) => props.graphicsContext.setDisplayWaveform(event.target.checked)}/>
+                <Switch color="primary" defaultChecked={initializationConstants.displaySpectrum}
+                        onChange={(event) => {
+                          props.audioContext.setDisplaySpectrum(event.target.checked);
+                          props.graphicsContext.setDisplaySpectrum(event.target.checked);
+                        }}/>
               }
               label="Display waveform"
               labelPlacement="end"/>

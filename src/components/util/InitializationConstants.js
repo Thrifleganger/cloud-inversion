@@ -1,20 +1,15 @@
 export const initializationConstants = {
-  animationSpeed: 1,
+  animationSpeed: 2,
   primeMoverColor: "#ffffff",
   secondaryMoverColor: "#ffffff",
   accentColor: "",
   startingOctave: 3,
   currentPatch: 0,
   displayAnimation: true,
-  displayWaveform: true,
+  displaySpectrum: false,
   displayNotes: false,
   arpeggiatorSemitones: [0,2,7,11]
 };
-
-let colourPaletteOpacity = 0.7;
-let colourPalettes = [
-  [`rgba(226,178,207,${colourPaletteOpacity})`, `rgba(203,129,174,${colourPaletteOpacity})`, `rgba(173,83,138,${colourPaletteOpacity})`, `rgba(111,20,75,${colourPaletteOpacity})`]
-];
 
 class SliderModel {
   constructor(id, parameter, defaultValue, minValue, maxValue, step) {

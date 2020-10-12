@@ -5,6 +5,9 @@ import ControllerDrawer from "./ControllerDrawer";
 import styles from "../../styles/layout/MainLayout.module.css"
 import SplashScreen from "./SplashScreen";
 import NoteInfo from "./NoteInfo";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+
 
 const MainLayout = (props) => {
 
@@ -18,12 +21,12 @@ const MainLayout = (props) => {
   const startAudioContext = useCallback(() => {
     props.audioContext.start()
     setAppLoaded(true);
-  }, []);
+  }, [props.audioContext]);
 
   const toggleSliderDrawer = useCallback((isOpen) => (event) => {
-      if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      /*if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
         return;
-      }
+      }*/
       setSliderControllerOpen(isOpen);
     }, []
   );
@@ -47,6 +50,12 @@ const MainLayout = (props) => {
 
   return (
     <>
+      <div className={styles.topDrawerExpanderCue} onClick={toggleSliderDrawer(true)}>
+        <ExpandMoreIcon fontSize={"small"}/>
+      </div>
+      <div className={styles.bottomDrawerExpanderCue} onClick={toggleBottomDrawer(true)}>
+        <ExpandLessIcon fontSize={"small"}/>
+      </div>
       <ControllerDrawer toggleSliderDrawer={toggleSliderDrawer}
                         isSliderControllerOpen={isSliderControllerOpen}
                         isBottomDrawerOpen={isBottomDrawerOpen}
@@ -61,6 +70,7 @@ const MainLayout = (props) => {
                 onClose={() => setSnackbarOpen(false)}
                 message={snackbarMessage}
                 anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}/>
+
       {shouldDisplayInfo ? (<NoteInfo/>) : ""}
       {isAppLoaded ? "" : (<SplashScreen startAudioContext={startAudioContext}/>)}
     </>

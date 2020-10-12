@@ -6,34 +6,28 @@ import PropTypes from "prop-types";
 class Dial extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      dial: null
-    }
     this.dialRef = React.createRef();
   }
 
   componentDidMount() {
     const {minValue, maxValue, defaultValue, step, parameter} = this.props.model
-    this.setState({
-      dial: new PrecisionInputs.FLStandardKnob(this.dialRef.current, {
-        min: minValue,
-        max: maxValue,
-        initial: defaultValue,
-        step: step,
-        color: "#29DFF9"
-      })
-    }, () => {
-      this.state.dial.addEventListener('change', (event) => {
-        this.props.changeCallback(event);
-        this.props.snackbarCallback(`${parameter} : ${event.target.value}`);
-      });
+    const dial = new PrecisionInputs.FLStandardKnob(this.dialRef.current, {
+      min: minValue,
+      max: maxValue,
+      initial: defaultValue,
+      step: step,
+      color: "#29DFF9"
+    });
+    dial.addEventListener('change', (event) => {
+      this.props.changeCallback(event);
+      this.props.snackbarCallback(`${parameter} : ${event.target.value}`);
     });
   }
 
   render() {
     console.log(`Rendering dial ${this.props.model.parameter}`)
     return (
-      <div ref={this.dialRef} className="my-knob-container"/>
+      <div ref={this.dialRef}/>
     );
   }
 }

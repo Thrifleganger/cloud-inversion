@@ -13,6 +13,8 @@ class App extends Component {
     super();
     this.audioContext = new AudioContext();
     this.graphicsContext = new GraphicsContext();
+    this.graphicsContext.setAudioContext(this.audioContext);
+
   }
   render() {
     return (

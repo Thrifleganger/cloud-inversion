@@ -14,6 +14,19 @@
     text-align: center;
 }
 
+.sliderPagination {
+    position: absolute;
+    top: 0;
+}
+
+.sliderPagination > div {
+    padding: 0;
+}
+
+.relativeBox {
+    position: relative;
+}
+
 .drawerHandleTop {
     width: 100%;
     height: 0.4em;

@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/Thrifleganger/cloud-inversion",
-  "name": "visual-synth-react",
+  "homepage": "https://thrifleganger.github.io/swara-react-synth",
+  "name": "swara-react-synth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,9 +10,11 @@
     "@react-navigation/drawer": "^5.9.2",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "material-ui-dots": "^2.0.2",
     "p5": "^1.1.9",
     "precision-inputs": "^0.2.5",
     "react": "^16.13.1",
+    "react-device-detect": "^1.14.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "react-swipeable-views": "^0.13.9",

@@ -3,10 +3,12 @@ import PrimeMover from "./PrimeMover";
 import {v4 as uuid} from 'uuid'
 import SecondaryMoverSystem from "./SecondaryMoverSystem";
 import {initializationConstants} from "../util/InitializationConstants";
+import {rangeMap} from "../util/Util";
 
 class GraphicsContext {
   constructor() {
     this.myP5 = null;
+    this.audioContext = null;
     this.primeMovers = new Map();
     this.secondaryMoverSystems = new Map();
     this.previousPrimeMover = null;
@@ -17,9 +19,9 @@ class GraphicsContext {
       primeMoverColor: initializationConstants.primeMoverColor,
       secondaryMoverColor: initializationConstants.secondaryMoverColor
     }
-    this.shouldDisplayAnimation = true;
-    this.shouldDisplayWaveform = true;
-    this.shouldDisplayInfo = false;
+    this.shouldDisplayAnimation = initializationConstants.displayAnimation;
+    this.shouldDisplaySpectrum = initializationConstants.displaySpectrum;
+    this.shouldDisplayInfo = initializationConstants.displayNotes;
   }
 
   initialize(domReference) {
@@ -38,6 +40,9 @@ class GraphicsContext {
       if (this.shouldDisplayAnimation) {
         this.primeMovers.forEach(primeMover => primeMover.update());
         this.secondaryMoverSystems.forEach(system => system.update());
+      }
+      if (this.shouldDisplaySpectrum) {
+        this.displayWaveform();
       }
     }
 
@@ -127,12 +132,50 @@ class GraphicsContext {
     system = null;
   }
 
+  displaySpectrum() {
+    const fftBuffer = this.audioContext.getFftBuffer();
+    if (fftBuffer === null || fftBuffer.length === 0) {
+      return
+    }
+    const {width, height} = this.myP5;
+    const fftSize = fftBuffer.length;
+    this.myP5.noStroke();
+    this.myP5.fill(255,255,255,40);
+    let w = width / fftSize;
+    for (let i = 0; i < fftSize; i++) {
+      let index = Math.floor(rangeMap(i, 0, fftSize, 0, width));
+      this.myP5.rect(index, height - (rangeMap(fftBuffer[i], -120, 0, 0, height)), w, height, 20);
+    }
+  }
+
+  displayWaveform() {
+    const fftBuffer = this.audioContext.getFftBuffer();
+    if (fftBuffer === null || fftBuffer.length === 0) {
+      return
+    }
+    const {width, height} = this.myP5;
+    const fftSize = fftBuffer.length;
+    this.myP5.stroke(255);
+    this.myP5.strokeWeight(1);
+    this.myP5.beginShape();
+    this.myP5.fill(255, 255, 255, 80);
+    for (let i = 0; i < fftSize; i++) {
+      let index = Math.floor(rangeMap(i, 0, fftSize, 0, width));
+      this.myP5.vertex(index, height/2 + (rangeMap(fftBuffer[i], -1, 1, -height, height)));
+    }
+    this.myP5.endShape();
+  }
+
+  setAudioContext(audioContext) {
+    this.audioContext = audioContext;
+  }
+
   setDisplayAnimation(value) {
     this.shouldDisplayAnimation = value;
   }
 
-  setDisplayWaveform(value) {
-    this.shouldDisplayWaveform = value;
+  setDisplaySpectrum(value) {
+    this.shouldDisplaySpectrum = value;
   }
 
   setAnimationSpeed(value) {
