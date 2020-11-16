@@ -14,7 +14,7 @@
 }
 
 .splashScreenIconGrid {
-    top: 35%;
+    top: 20%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -30,22 +30,36 @@
 .splashScreenIconsHorizontal {
     display: flex;
     flex-direction: row;
+
 }
 
 .splashScreenIconsHorizontal > * {
     margin: 0.2em;
+
 }
 
 .splashScreenTitle {
-    font-size: 6em;
+    font-size: 14vmin;
     position: absolute;
     left: 0;
     right: 0;
-    top: 60%;
+    top: 50%;
     text-align: center;
     font-family: "OrangeSlices", sans-serif;
-
     background: -webkit-linear-gradient(45deg, #d7a1c6, #b187a9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.splashScreenTitle2 {
+    font-size: 6vmin;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    text-align: center;
+    font-family: "OrangeSlices", sans-serif;
+    background: -webkit-linear-gradient(45deg, #47598a, #a17bc8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

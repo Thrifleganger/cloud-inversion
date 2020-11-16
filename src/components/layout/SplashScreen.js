@@ -22,7 +22,10 @@ const SplashScreen = (props) => {
         </div>
       </div>
       <div className={styles.splashScreenTitle}>
-        swara
+        {'{swara\'s}'}
+      </div>
+      <div className={styles.splashScreenTitle2}>
+        dreamscape
       </div>
     </div>
   );
