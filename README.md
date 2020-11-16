@@ -1,6 +1,10 @@
-# Cloud Inversion
+# Swara's Dreamscape
 
-A dreamy synth with an evolving tone and backdrop. Built using React.js, Tone.js and P5.js. Currently only supports touch enabled mobile devices. 
+A dreamy synth with an evolving tone and backdrop. Built using React.js, Tone.js and P5.js. Currently only supports touch enabled mobile devices.
+
+Dedicated to my 3 year old niece, Swara.
+
+![Logo](public/logo-large.jpg?raw=true "Title") 
 
 In the project directory, you can run:
 
