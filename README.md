@@ -1,6 +1,6 @@
 # Swara's Dreamscape
 
-A dreamy synth with an evolving tone and backdrop. Built using React.js, Tone.js and P5.js. Currently only supports touch enabled mobile devices.
+A dreamy synth with an evolving tone and backdrop. Built using React.js, Tone.js and P5.js. Supports desktop browsers and mobile browsers. There is an issue with the page open in Safari Browser, both on Mac and IOS devices. 
 
 Dedicated to my 3 year old niece, Swara.
 
